@@ -4,3 +4,28 @@ use the sandbox
 cd into it
 .$ name/bin/ activate
 virtualenv
+
+
+10/5/16
+Secure session:
+-sniffable, but encryped
+-in flask
+  -securely signed cookie
+  -session obj works like a dict
+  
+to add data to a session:
+session[key] = value
+
+to remove data from a session
+session.pop(key)
+
+make seesions secure
+  -https
+  -sessionid
+  -secret key
+    -app.secret_key = <randomly_generated_string>
+to get a randomly generated string"
+import os
+os.urandom(32)   --> 32 bits of random data in a string
+
+comment out private key before pushing 
